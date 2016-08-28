@@ -1,4 +1,4 @@
-user_input = input("please input the starting price of the banana, the pocket money of the soldier, number of bananas")
+user_input = input("please input the starting price of the banana, the pocket money of the soldier, number of bananas: ".upper())
 
 banana_price = int(user_input.split()[0])
 
@@ -8,7 +8,7 @@ number_of_bananas = int(user_input.split()[2])
 
 total_price = 0
 
-for x in range(number_of_bananas + 1):
+for x in range(1,number_of_bananas+1):
     total_price += (x * banana_price)
 
 money_to_borrow = total_price - pocket_money
